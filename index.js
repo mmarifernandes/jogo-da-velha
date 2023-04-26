@@ -19,11 +19,10 @@ function joga(celula) {
         } else {
             letra = "X";
         }
-        document.getElementById("aa").innerHTML = "Vez do jogador " + letra
+        document.getElementById("start").innerHTML = "Vez do jogador " + letra
     }
 }
-let ganha = letra
-console.log(letra)
+
 
 function verif() {
     c11 = document.getElementById('cel11').innerHTML;
@@ -35,7 +34,14 @@ function verif() {
     c31 = document.getElementById('cel31').innerHTML;
     c32 = document.getElementById('cel32').innerHTML;
     c33 = document.getElementById('cel33').innerHTML;
-    if (((c11 != '') && (c12 != '') && (c13 != '') && (c11 == c12) && (c12 == c13)) || ((c11 != '') && (c22 != '') && (c33 != '') && (c11 == c22) && (c22 == c33)) || ((c11 != '') && (c21 != '') && (c31 != '') && (c11 == c21) && (c21 == c31)) || ((c21 != '') && (c22 != '') && (c23 != '') && (c21 == c22) && (c22 == c23)) || ((c31 != '') && (c32 != '') && (c33 != '') && (c31 == c32) && (c32 == c33)) || ((c12 != '') && (c22 != '') && (c32 != '') && (c12 == c22) && (c22 == c32)) || ((c13 != '') && (c23 != '') && (c33 != '') && (c13 == c23) && (c23 == c33)) || ((c31 != '') && (c22 != '') && (c13 != '') && (c31 == c22) && (c22 == c13))) {
+    if (((c11 != '') && (c12 != '') && (c13 != '') && (c11 == c12) && (c12 == c13)) || 
+    ((c11 != '') && (c22 != '') && (c33 != '') && (c11 == c22) && (c22 == c33)) || 
+    ((c11 != '') && (c21 != '') && (c31 != '') && (c11 == c21) && (c21 == c31)) || 
+    ((c21 != '') && (c22 != '') && (c23 != '') && (c21 == c22) && (c22 == c23)) || 
+    ((c31 != '') && (c32 != '') && (c33 != '') && (c31 == c32) && (c32 == c33)) || 
+    ((c12 != '') && (c22 != '') && (c32 != '') && (c12 == c22) && (c22 == c32)) || 
+    ((c13 != '') && (c23 != '') && (c33 != '') && (c13 == c23) && (c23 == c33)) || 
+    ((c31 != '') && (c22 != '') && (c13 != '') && (c31 == c22) && (c22 == c13))) {
         if (letra == "X") {
             document.getElementById("recado").innerHTML = "O ganhou! Parabéns!"
         }
@@ -58,7 +64,7 @@ function novo() {
             nomecelula = 'cel' + i + j
             document.getElementById(nomecelula).innerHTML = '';
             document.getElementById("recado").innerHTML = ""
-            document.getElementById("aa").innerHTML = "Aperte para começar"
+            document.getElementById("start").innerHTML = "clique para começar"
             letra = "X"
             conf = 0
         }

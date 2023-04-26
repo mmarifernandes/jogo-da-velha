@@ -1,45 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
 
-.eh{
-    width: 100px;
-    height: 100px;
-    background: #e799ff;
-    font-size: 80px;
-    color: #000000;
+*{
+    font-family: Manrope;
+
+}
+.cell{
+    background: #222222;
+    font-size: 60px;
+    color: azure;
     cursor: pointer;
-    font-family: 'Gochi Hand', cursive;
+    width: 7vw;
+    height: 7vw;
+    overflow: hidden;
+    transition: 0.3s;
     }
 
-.mesa{
-    background: #000066;
-
+.table{
+    background: #6f6f6f;
+    table-layout: fixed;
+    margin: auto;
     }
 
 
 body{
     text-align: center;
-    background-image: url("https://i.pinimg.com/originals/a1/95/ae/a195aedf584b9ee4eaa1c258cd404cfa.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #141414;
+    margin: auto;
 }
 
 h1{
-    font-family: 'Playfair Display SC', serif;
     font-size: 80px;
-    color: #b652f0;
+    color: azure;
+    margin-bottom: 0;
+    margin-top: 7vh;
 }
 
-#aa, #recado{
-    font-family: 'Noto Serif JP', serif;
+#start, #recado{
     color: azure;
-
+    font-size: 20px;
 }
 
 #recado{
-    font-size: 40px;
+    color: azure;
 }
 
 input{
-    font-size: 20px;
-    font-family: 'Noto Serif JP', serif;
-    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 10vw;
+    height: 5vh;
+    margin: 0 auto;
+    background-color: #6f6f6f;
+    border: none;
+    transition: 0.3s;
+
+}
+
+input:hover{
+    background-color: azure;
+}
+
+.cell:hover{
+    background-color: #9f9f9f;
+    transition: ease-in;
 }
